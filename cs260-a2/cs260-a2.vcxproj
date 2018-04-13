@@ -115,6 +115,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="StringList.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="StringList.cpp" />
+    <ClCompile Include="StringListTest.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
