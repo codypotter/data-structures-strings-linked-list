@@ -5,11 +5,12 @@ using namespace std;
 
 class StringList {
 public:
-	struct node {
-		node* previousNode;
-		node* nextNode;
+	struct Node {
+		Node* previousNode;
+		Node* nextNode;
 		string data;
 	};
+	Node * head;
 	StringList();
 	~StringList();
 	void removeAll();
@@ -18,9 +19,8 @@ public:
 	int totalItems();
 	void printForward();
 	void printReverse();
-	int find(string stringToFind, node* theHead);
+	int find(string stringToFind, Node* theHead);
 	int findLetter(char charToFind);
-private:
-	node* head;
+	
 };
 
